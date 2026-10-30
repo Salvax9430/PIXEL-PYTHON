@@ -1,0 +1,472 @@
+<!doctype html>
+<html style="height: auto; min-height: 100%">
+  <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="cid:css-34c29c19-2f9c-4a63-bc3c-66567ccc89ec@mhtml.blink"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="cid:css-b88d5348-7d60-4895-99c4-baecc31d20eb@mhtml.blink"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>KyU | Student Portal</title>
+    <link
+      rel="shortcut icon"
+      href="https://student.kyu.ac.ke/images/logo.png"
+    />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="https://student.kyu.ac.ke/Loader/Loader.css" rel="stylesheet" />
+    <!-- Bootstrap 3.3.7 -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/bower_components/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/bower_components/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/bower_components/Ionicons/css/ionicons.min.css"
+    />
+    <!-- jvectormap -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/bower_components/jvectormap/jquery-jvectormap.css"
+    />
+    <!-- DataTables -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css"
+    />
+    <!-- Theme style -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/dist/css/AdminLTE.min.css"
+    />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link
+      rel="stylesheet"
+      href="https://student.kyu.ac.ke/dist/css/skins/_all-skins.min.css"
+    />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"
+    />
+
+    <link
+      href="https://student.kyu.ac.ke/Zebra_Datepicker-master/public/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://student.kyu.ac.ke/Zebra_Datepicker-master/public/css/default.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://student.kyu.ac.ke/dist/css/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="skin-blue layout-boxed sidebar-mini"
+    style="height: auto; min-height: 100%"
+  >
+    <div
+      class="wrapper"
+      style="overflow: hidden; height: auto; min-height: 100%"
+    >
+      <header class="main-header">
+        <!-- Logo -->
+        <a
+          href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+          class="logo"
+        >
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>K</b>yU</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>KyU </b>Students Portal</span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a
+            href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+            class="sidebar-toggle"
+            data-toggle="push-menu"
+            role="button"
+          >
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <marquee
+            id="runn"
+            runat="server"
+            visible="true"
+            style="height: auto; width: 650px; color: #ffffff"
+            loop="infinite"
+            direction="left"
+            scrollamount="5"
+          >
+            <p class="text-center text-success">
+              <span class="label label-danger" style="font-size: 18px"
+                >Welcome to the new student portal. For any assistance contact
+                the ICT Department. Thank You.</span
+              >
+            </p>
+          </marquee>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a
+                  href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  <img
+                    src="https://student.kyu.ac.ke/images/logo.png"
+                    class="user-image"
+                    alt="User Image"
+                  />
+                  <span class="hidden-xs">
+                    Welcome: SIFUNA SIMIYU BRAMUEL
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img
+                      src="https://studenth.kyu.ac.ke/images/logo.png"
+                      class="img-circle"
+                      alt="User Image"
+                    />
+                    <p>
+                      <asp:label id="lblUser2" runat="server"></asp:label>
+                    </p>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a
+                        href="https://student.kyu.ac.ke/Dashboard/Dashboard"
+                        class="btn btn-default btn-flat"
+                        >Profile</a
+                      >
+                    </div>
+                    <div class="pull-right">
+                      <a
+                        href="https://student.kyu.ac.ke/login/Login"
+                        class="btn btn-default btn-flat"
+                        ><i class="fa fa-sign-out"></i> Logout</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a
+                  href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+                  data-toggle="control-sidebar"
+                  ><i class="fa fa-gears"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar" style="background-color: #00c0ef">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar" style="height: auto">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img
+                src="https://student.kyu.ac.ke/images/logo.png"
+                class="img-circle"
+                alt="User Image"
+              />
+            </div>
+            <div class="pull-left info">
+              <p>
+                <asp:label id="lblUser3" runat="server"></asp:label>
+              </p>
+              <a
+                href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+                ><i class="fa fa-circle text-success"></i>Online</a
+              >
+            </div>
+          </div>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu tree" data-widget="tree">
+            <li style="color: #fff; background-color: #cdb266" class="header">
+              MAIN NAVIGATION
+            </li>
+            <li>
+              <a href="https://student.kyu.ac.ke/Dashboard/Dashboard"
+                ><i class="fa fa-dashboard text-blue"></i
+                ><span style="color: #fff">Dashboard</span></a
+              >
+            </li>
+            <li class="treeview">
+              <a
+                href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+              >
+                <i class="fa fa-pie-chart text-red"></i>
+                <span style="color: #fff">Financials</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/Financial/FeeStatement"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Fees Statement</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/Financial/Receipts"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Payment Receipts</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a
+                href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+              >
+                <i class="fa fa-graduation-cap text-green"></i>
+                <span style="color: #fff">Academics</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/Course/CourseRegistration"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Register Units</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Provisional Results</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/Course/LecturerEvaluation"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Lecturer Evaluation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=EXAMCARD"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Exam Cards</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/Course/StudentRequisitions"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Academic Requisitions</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-exclamation-triangle"></i>
+                            <span style="color:#fff">student requisitions</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/Course/StudentRequisitions" style="color:#fff"><i class="fa fa-circle-o"></i>Requisition List</a></li>-->
+
+            
+
+            <li class="treeview">
+              <a
+                href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+              >
+                <i class="fa fa-lightbulb-o"></i>
+                <span style="color: #fff">Students Clearance</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/Course/ClearanceRequest"
+                    style="color: #fff"
+                    ><i class="fa fa-circle-o"></i>Clearance Request</a
+                  >
+                </li>
+              </ul>
+
+              <!--</ul>
+
+                        </li>-->
+            </li>
+            <li id="sttt" runat="server" class="treeview">
+              <a
+                href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+              >
+                <i class="fa fa-cogs text-blue"></i>
+                <span style="color: #fff">Settings</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a
+                    href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+                    style="color :rgba(255, 255, 255, 0.884)"
+                    ><i class="fa fa-circle-o"></i>Change password</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!--<li style="color: #fff; background-color: #cdb266" class="header">PERIODIC ACTIVITIES</li>-->
+
+            <!--<li><a href="LecsEvaluation.aspx"><i class="fa fa-microphone text-yellow"></i><span style="color:#fff">Lecturers Evaluation</span></a></li>-->
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="min-height: 1258px">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1></h1>
+          <ol class="breadcrumb">
+            <li>
+              <a
+                href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+                ><i class="fa fa-dashboard"></i>View Documents</a
+              >
+            </li>
+            <li class="active">View Documents</li>
+          </ol>
+        </section>
+        <div class="body-content">
+          <div
+            class="loading"
+            align="center"
+            id="divLoader"
+            style="display: none; top: 604.5px; left: 201px"
+          >
+            <br />
+            <img
+              src="https://student.kyu.ac.ke/images/ajax-loader.gif"
+              alt=""
+            />
+          </div>
+          <!-- Main content -->
+          <section class="content">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <iframe
+                      id="iframe"
+                      style="width: 100%; height: 600px"
+                      src="cid:frame-D1D6B56DE17AC009584785CA6DFE6490@mhtml.blink"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs"></div>
+        <center>
+          <strong
+            >Copyright Β© 2025
+            <a href="https://www.kyu.ac.ke/" target="_blank"
+              >Kirinyaga University</a
+            >.</strong
+          >
+          Powered by.
+          <a
+            href="https://student.kyu.ac.ke/ViewDocuments/ViewDocuments?DocT=RESULTS#"
+            target="_blank"
+            >DSL Solutions Limited</a
+          >
+        </center>
+      </footer>
+      <div
+        class="control-sidebar-bg"
+        style="position: absolute; height: 1409px"
+      ></div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery 3 -->
+
+    <!-- Bootstrap 3.3.7 -->
+
+    <!-- FastClick -->
+
+    <!-- AdminLTE App -->
+
+    <!-- Sparkline -->
+
+    <!-- jvectormap  -->
+
+    <!-- SlimScroll -->
+
+    <!-- ChartJS -->
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
+    <!-- AdminLTE for demo purposes -->
+
+    <!-- DataTables -->
+  </body>
+</html>

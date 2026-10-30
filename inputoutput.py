@@ -6,6 +6,7 @@ num2=int(input("Enter second number:   "))
 #adding 2 numbers 
 sum=num1+num2
 print(f"The sum of {num1} and {num2} is {sum}")
+
 #asking and displaying the age of the user
 
 age=int(input("Enter your age: "))
