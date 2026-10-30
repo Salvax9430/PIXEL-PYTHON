@@ -28,3 +28,6 @@ class Animal:
 class Dog(Animal):
     def speak(self):
         print("Dog barking")
+class cat(Animal):
+    def speak(self):
+        return super().speak()
